@@ -16,6 +16,13 @@
   }
 }
 
+@layer components {
+    .all-\[unset\] {
+        all: unset;
+    }
+}
+
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
