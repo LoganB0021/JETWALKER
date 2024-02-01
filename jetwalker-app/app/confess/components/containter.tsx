@@ -1,4 +1,4 @@
-import { NavBarLinks } from "@/components/NavBar";
+import { NavBarLinks } from "@/app/components/NavBar";
 import { TitleCard } from "./titleCard";
 
 export const Container = () => {

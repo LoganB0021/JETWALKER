@@ -1,9 +1,9 @@
-import { TitleCard } from '@/components/TitleCard'
-import { TheJetWalker } from '@/components/TheJetWalker'
-import { Box } from '@/components/jetwalkerdotcom'
-import { GroundEffects } from '@/components/groundeffects'
-import { RawHoney } from '@/components/rawhoney'
-import { WallOfWords } from '@/components/wallOfwords'
+import { TitleCard } from '@/app/components/TitleCard'
+import { TheJetWalker } from '@/app/components/TheJetWalker'
+import { Box } from '@/app/components/jetwalkerdotcom'
+import { GroundEffects } from '@/app/components/groundeffects'
+import { RawHoney } from '@/app/components/rawhoney'
+import { WallOfWords } from '@/app/components/wallOfwords'
 import { NavBarLinks } from './NavBar'
 
 export const Container = (): JSX.Element => {
