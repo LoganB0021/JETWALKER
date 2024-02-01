@@ -1,7 +1,13 @@
+import Link from "next/link";
 import React from "react";
 
-export const RawHoney = (): JSX.Element => {
+interface Props {
+    href: string; // The path to navigate to
+  }
+
+export const RawHoney = ({href}: Props): JSX.Element => {
     return (
+        <Link href={href} passHref>
             <div className="relative w-[286px] h-[286px] rounded-[143px] border border-solid border-black">
                 <div className="absolute w-[148px] h-[38px] top-[36px] left-[68px] [font-family:'Inter-Regular',Helvetica] font-normal text-black text-[24px] text-center tracking-[0] leading-[normal]">
                     Raw Honey
@@ -10,5 +16,7 @@ export const RawHoney = (): JSX.Element => {
                     EP
                 </div>
             </div>
+        </Link>
+            
     );
 };
