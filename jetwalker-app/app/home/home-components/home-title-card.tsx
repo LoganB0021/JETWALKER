@@ -1,6 +1,4 @@
-import React from "react";
-
-export const TitleCard = (): JSX.Element => {
+const HomeTitleCard = (): React.JSX.Element => {
     return (
         <div className="relative w-[896px] h-[189px] bg-white">
             <img className="absolute w-[803px] h-[94px] top-[28px] left-[47px]" alt="Jet WALKER" src="/JET-WALKER.png" />
@@ -10,3 +8,5 @@ export const TitleCard = (): JSX.Element => {
         </div>
     );
 };
+
+export default HomeTitleCard;

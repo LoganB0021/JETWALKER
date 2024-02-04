@@ -1,11 +1,10 @@
 import Link from "next/link";
-import React from "react";
 
 interface Props {
     href: string; // The path to navigate to
   }
 
-export const RawHoney = ({href}: Props): JSX.Element => {
+const RawHoney = ({href}: Props): React.JSX.Element => {
     return (
         <Link href={href} passHref>
             <div className="relative w-[286px] h-[286px] rounded-[143px] border border-solid border-black">
@@ -20,3 +19,5 @@ export const RawHoney = ({href}: Props): JSX.Element => {
             
     );
 };
+
+export default RawHoney;

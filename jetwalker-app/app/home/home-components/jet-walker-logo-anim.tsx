@@ -1,11 +1,11 @@
 'use client'
-import React, { useState } from "react";
+import { useState } from "react";
 
 interface Props {
     className?: string;
 }
 
-export const TheJetWalker = ({ className }: Props): JSX.Element => {
+const JetWalkerLogoAnim = ({ className }: Props): React.JSX.Element => {
     const [isHovered, setIsHovered] = useState(false);
 
     return (
@@ -22,5 +22,7 @@ export const TheJetWalker = ({ className }: Props): JSX.Element => {
         </div>
     );
 };
+
+export default JetWalkerLogoAnim;
 
 

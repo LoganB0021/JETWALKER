@@ -1,5 +1,5 @@
 'use client'
-import React, { useState } from "react";
+import { useState } from "react";
 import Link from "next/link"; // Import Link from Next.js
 
 interface Props {
@@ -10,7 +10,7 @@ interface Props {
   text?: string;
 }
 
-export const Jtw = ({ href, label = "BUTTON", className, divClassName, text = "BUTTON" }: Props): JSX.Element => {
+const JetWalkerButton1 = ({ href, label = "BUTTON", className, divClassName, text = "BUTTON" }: Props): React.JSX.Element => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
@@ -33,3 +33,5 @@ export const Jtw = ({ href, label = "BUTTON", className, divClassName, text = "B
     </Link>
   );
 };
+
+export default JetWalkerButton1;
