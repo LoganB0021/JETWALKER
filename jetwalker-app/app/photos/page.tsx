@@ -1,10 +1,10 @@
-import { NavBarLinks } from "@/app/components/NavBar";
-import { Photos } from "./components/photoboard";
+import NavBar from "../home/home-components/nav-bar";
+import Photos from "./photos-components/photo-board";
 
 export default function Photo() {
     return (
         <main>
-            <NavBarLinks/>
+            <NavBar/>
             <Photos/>
         </main>
     )

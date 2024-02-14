@@ -1,9 +1,11 @@
-import { Container } from "./components/containter";
+import ConfessContainer from "./confess-components/confess-container";
 
-export default function Confess() {
+const Confess = (): React.JSX.Element => {
     return (
         <main>
-            <Container/>
+            <ConfessContainer/>
         </main>
-    )
-}
+    );
+};
+
+export default Confess;

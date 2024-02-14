@@ -1,6 +1,4 @@
-import React from "react";
-
-export const TitleCard = (): JSX.Element => {
+const HomeTitleCard = (): React.JSX.Element => {
     return (
     <div className="relative">
         <div className="font-bold text-black text-[128px] text-center leading-[normal]">
@@ -12,3 +10,5 @@ export const TitleCard = (): JSX.Element => {
     </div>
     );
 };
+
+export default HomeTitleCard;

@@ -3,7 +3,7 @@ import Isotope from 'isotope-layout';
 import { useEffect, useRef } from 'react';
 import imagesLoaded from 'imagesloaded';
 
-export const Photos = (): JSX.Element => {
+const Photos = (): React.JSX.Element => {
 
   const isotopeRef = useRef<Isotope | null>(null);
 
@@ -50,3 +50,5 @@ export const Photos = (): JSX.Element => {
         </div>
     )
 }
+
+export default Photos;
