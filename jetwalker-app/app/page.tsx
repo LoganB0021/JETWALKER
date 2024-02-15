@@ -3,6 +3,8 @@ import { playSound } from "./howler/test-howler";
 
 export default function Home() {
 
+  console.log("Home function")
+
   playSound("/100,000 (Unfinished).wav");
 
   return (
