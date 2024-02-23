@@ -1,12 +1,20 @@
 import NavBar from "@/app/home/home-components/nav-bar";
 import  ConfessTitleCard from "./confess-title-card";
+import ConfessTextBox from "./confess-text-box";
+import { Box, Container } from "@mui/material";
 
 const ConfessContainer = (): React.JSX.Element => {
     return (
-    <div className="flex flex-col items-center justify-center min-h-screen w-full bg-white">
-        <ConfessTitleCard/>
-        <NavBar/>
-    </div>
+        <Box sx={{
+            bgcolor: "white",
+            display: 'flex',
+            flexDirection: "column",
+            height: '100vh'
+        }}>
+            <ConfessTitleCard/>
+            <NavBar/>
+            <ConfessTextBox/>
+        </Box>        
     );
   };
 
