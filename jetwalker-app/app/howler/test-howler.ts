@@ -4,9 +4,7 @@ export const playSound = (src: string) => {
     const sound = new Howl({
         src: [src],
         autoplay: true,
-        onend: function() {
-            console.log('Finished!');
-        }
+        html5: true
     });
 
     sound.play();
