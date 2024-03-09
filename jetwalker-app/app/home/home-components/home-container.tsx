@@ -4,6 +4,7 @@ import GroundEffects from './ground-effects'
 import RawHoney from './raw-honey'
 import WallOfWords from './wall-of-words'
 import NavBar from './nav-bar'
+import TwitterTimelnEmbed from './twitterembed'
 
 const HomeContainer = (): React.JSX.Element => {
     return (
@@ -15,6 +16,7 @@ const HomeContainer = (): React.JSX.Element => {
         <div className="grid grid-cols-2 gap-2">
             <RawHoney href='https://open.spotify.com/album/4oSCL9CwfqPQ0B0btSnX6y'/>
             <WallOfWords/>
+            <TwitterTimelnEmbed/>
         </div>
     </div>
     );

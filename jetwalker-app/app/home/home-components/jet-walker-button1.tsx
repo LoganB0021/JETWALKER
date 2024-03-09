@@ -1,6 +1,7 @@
 'use client'
 import { useState } from "react";
 import Link from "next/link"; // Import Link from Next.js
+import { usePathname } from "next/navigation";
 
 interface Props {
   href: string; // The path to navigate to
@@ -12,15 +13,17 @@ interface Props {
 
 const JetWalkerButton1 = ({ href, label = "BUTTON", className, divClassName, text = "BUTTON" }: Props): React.JSX.Element => {
   const [isHovered, setIsHovered] = useState(false);
+  const pathName = usePathname()
 
   return (
     <Link href={href} passHref>
         <button
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
-          className={`w-[261px] h-[51px] relative all-[unset] box-border ${
-            isHovered ? "bg-[#0500ff]" : ""
-          } ${className}`}
+          className={`w-[261px] h-[51px] relative all-[unset] box-border 
+          ${ isHovered ? "bg-[#0500ff]" : "" }  
+          ${ pathName === href ? "bg-[#0512ff]" : ""} 
+          ${className}`}
         >
           <div
             className={`[font-family:'Inter-Bold',Helvetica] w-[261px] left-0 tracking-[0] text-[32px] -top-px h-[51px] font-bold text-center leading-[normal] absolute ${

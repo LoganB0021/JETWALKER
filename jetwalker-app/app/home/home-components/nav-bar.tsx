@@ -8,14 +8,15 @@ const NavBar = (): React.JSX.Element => {
     flexDirection={"row"} 
     justifyContent={"center"}
     flexWrap={"wrap"}
+    bgcolor={"white"}
     >
         <JetWalkerButton1 href="/" text="CONTACT" label="CONTACT" />
         <JetWalkerButton1 href="/photos" text="PHOTO" label="PHOTO" />
         <JetWalkerButton1 href="/confess" text="CONFESS" label="CONFESS" />
         <JetWalkerButton1 href="/" text="VIDEO" label="VIDEO" />
         <JetWalkerButton1 href="/" text="SCRIPTURES" label="SCRIPTURES" />
-        <JetWalkerButton1 href="/" text="SHOP" label="SHOP" />
-        <JetWalkerButton1 href="/" text="HOME" label="HOME" />
+        <JetWalkerButton1 href="/shop" text="SHOP" label="SHOP" />
+        <JetWalkerButton1 href="/home" text="HOME" label="HOME" />
     </Box>
     
   );

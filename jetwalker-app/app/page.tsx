@@ -32,7 +32,7 @@ export default function Home() {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen w-full">
-      <JetWalkerDotComBoard href="/home" />
+      <JetWalkerDotComBoard href="/home" text="jetwalker.com" />
       <button
         className="w-[261px] h-[51px] relative all-[unset] box-border bg-red"
         onClick={playSound}
